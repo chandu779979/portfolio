@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandu Bobbala | Software Developer & AI/ML Undergrad</title>
+  <meta name="description" content="Portfolio of Chandu Bobbala - Computer Science & Engineering (AI & ML) undergraduate, Python developer, and builder of CodeReview AI and Smart Waste Management.">
+  <meta name="keywords" content="Chandu Bobbala, Software Developer, Python, FastAPI, React, AI ML, Portfolio, Kalasalingam Academy">
+  <meta name="author" content="Chandu Bobbala">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chandu Bobbala | Developer Portfolio">
+  <meta property="og:description" content="Computer Science & Engineering undergraduate specializing in AI & ML with a strong foundation in Python, SQL, and full-stack web development.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234f46e5'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='48' font-family='sans-serif' font-weight='bold'>CB</text></svg>">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Chandu Bobbala Home">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-name">Chandu</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-ext">dev</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume CTA in Header -->
+        <a href="Chandu_Bobbala_Resume.pdf" download="Chandu_Bobbala_Resume.pdf" class="btn btn-outline btn-sm header-resume-btn" title="Download Official Resume">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-menu-cta">
+          <a href="Chandu_Bobbala_Resume.pdf" download="Chandu_Bobbala_Resume.pdf" class="btn btn-primary btn-block">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Resume
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="badge-pill">
+            <span class="status-dot"></span>
+            <span class="badge-text">Available for Software Roles &amp; Internships</span>
+          </div>
+
+          <!-- Headline & Title -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Chandu Bobbala</span>
+          </h1>
+          <p class="hero-subtitle">
+            Computer Science &amp; Engineering Undergraduate <span class="text-accent">(AI &amp; ML)</span>
+          </p>
+
+          <!-- Introduction based strictly on resume -->
+          <p class="hero-desc">
+            Equipped with a solid foundation in <strong>Python</strong>, <strong>SQL</strong>, and modern web technologies including <strong>HTML, CSS, and JavaScript</strong>. Hands-on experience developing full-stack applications with AI integrations, AST-based static code analysis, and secure database solutions.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="Chandu_Bobbala_Resume.pdf" download="Chandu_Bobbala_Resume.pdf" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Professional Links from Resume -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="mailto:bobbalachandu25@gmail.com" class="social-chip" title="Email Chandu Bobbala">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>bobbalachandu25@gmail.com</span>
+            </a>
+            <a href="tel:+919398419225" class="social-chip" title="Call Chandu Bobbala">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 93984 19225</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/chandu779979" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Developer Visual Element: Interactive Terminal & Code Card -->
+        <div class="hero-visual">
+          <div class="code-terminal-card">
+            <!-- Window header -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>CodeReview-AI / ast_engine.py</span>
+              </div>
+              <div class="terminal-badge">Python AST</div>
+            </div>
+
+            <!-- Code preview content -->
+            <div class="terminal-body">
+              <pre class="code-snippet"><code><span class="c-comment"># CodeReview AI: Deterministic AST &amp; OWASP Engine</span>
+<span class="c-keyword">import</span> <span class="c-variable">ast</span>
+<span class="c-keyword">from</span> <span class="c-variable">typing</span> <span class="c-keyword">import</span> <span class="c-type">List</span>, <span class="c-type">Dict</span>
+
+<span class="c-keyword">class</span> <span class="c-func">SecurityRuleVisitor</span>(<span class="c-variable">ast</span>.<span class="c-type">NodeVisitor</span>):
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(<span class="c-param">self</span>):
+        <span class="c-param">self</span>.<span class="c-variable">findings</span>: <span class="c-type">List</span>[<span class="c-type">Dict</span>] = []
+
+    <span class="c-keyword">def</span> <span class="c-func">visit_Call</span>(<span class="c-param">self</span>, <span class="c-variable">node</span>):
+        <span class="c-keyword">if</span> <span class="c-func">isinstance</span>(<span class="c-variable">node</span>.<span class="c-variable">func</span>, <span class="c-variable">ast</span>.<span class="c-type">Name</span>):
+            <span class="c-keyword">if</span> <span class="c-variable">node</span>.<span class="c-variable">func</span>.<span class="c-variable">id</span> == <span class="c-string">"eval"</span>:
+                <span class="c-param">self</span>.<span class="c-variable">findings</span>.<span class="c-func">append</span>({
+                    <span class="c-string">"rule"</span>: <span class="c-string">"OWASP-A03: Injection"</span>,
+                    <span class="c-string">"line"</span>: <span class="c-variable">node</span>.<span class="c-variable">lineno</span>,
+                    <span class="c-string">"severity"</span>: <span class="c-string">"HIGH"</span>,
+                    <span class="c-string">"status"</span>: <span class="c-string">"Flagged for AI Remediation"</span>
+                })
+        <span class="c-param">self</span>.<span class="c-func">generic_visit</span>(<span class="c-variable">node</span>)</code></pre>
+            </div>
+
+            <!-- Terminal status bar -->
+            <div class="terminal-footer">
+              <div class="footer-item">
+                <span class="indicator-led"></span>
+                <span>AST Parser: Ready</span>
+              </div>
+              <div class="footer-item">
+                <span>OWASP Top 10 Mapped</span>
+              </div>
+              <div class="footer-item">
+                <span class="highlight-tag">FastAPI + React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating stat cards -->
+          <div class="floating-stat-card stat-cgpa">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-info">
+              <span class="stat-value">8.18 CGPA</span>
+              <span class="stat-caption">B.Tech CSE (AI &amp; ML)</span>
+            </div>
+          </div>
+
+          <div class="floating-stat-card stat-projects">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-info">
+              <span class="stat-value">Full-Stack</span>
+              <span class="stat-caption">Python &amp; REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Profile Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="about-lead">
+              Undergraduate Engineer specializing in <span class="text-accent">Artificial Intelligence &amp; Machine Learning</span> with hands-on software development experience.
+            </h3>
+            
+            <p>
+              I am a <strong>Computer Science and Engineering undergraduate</strong> at <strong>Kalasalingam Academy of Research and Education</strong> (Batch 2023 – 2027), pursuing an academic specialization in <strong>AI &amp; ML</strong>.
+            </p>
+
+            <p>
+              My technical foundation centers around <strong>Python</strong>, <strong>SQL</strong>, and essential web technologies (<strong>HTML, CSS, JavaScript</strong>). Through hands-on academic projects, I have architected full-stack applications—ranging from an AI-assisted code review platform utilizing Python Abstract Syntax Tree (AST) analysis to a civic reporting system powered by Flask and PostgreSQL.
+            </p>
+
+            <p>
+              Recognized as a quick learner with strong analytical thinking, communication, and team collaboration skills, I am looking for <strong>software development opportunities, entry-level engineering roles, and internships</strong> where I can build dependable solutions while continuously learning and adapting to modern engineering workflows.
+            </p>
+
+            <div class="about-key-points">
+              <div class="key-point-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Problem Solving &amp; Analytical Thinking:</strong> Translating requirements into modular, maintainable software.</span>
+              </div>
+              <div class="key-point-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>API &amp; Backend Engineering:</strong> Practical experience building REST APIs with FastAPI and Flask.</span>
+              </div>
+              <div class="key-point-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Adaptability &amp; Team Collaboration:</strong> Ready to contribute effectively to cross-functional development teams.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="about-cards-container">
+            <div class="about-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h4>Education Focus</h4>
+              <p>B.Tech in Computer Science &amp; Engineering (AI &amp; ML) at Kalasalingam Academy. Current CGPA: <strong>8.18</strong>.</p>
+            </div>
+
+            <div class="about-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h4>Full-Stack &amp; Python</h4>
+              <p>End-to-end development combining Python backends (FastAPI / Flask) with frontend interfaces (React / Vanilla JS).</p>
+            </div>
+
+            <div class="about-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h4>Database &amp; Storage</h4>
+              <p>Relational schema design, SQL querying, PostgreSQL integration, and secure transactional data management.</p>
+            </div>
+
+            <div class="about-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h4>Security &amp; AST Analysis</h4>
+              <p>Applied AST parsing for rule-based syntax validation and OWASP Top 10 security mapping integrated with AI models.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Technical Inventory</span>
+          <h2 class="section-title">Skills &amp; Capabilities</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Directly derived from academic coursework, certified foundations, and hands-on projects.
+          </p>
+        </div>
+
+        <!-- Skill Filters -->
+        <div class="skill-filter-bar" role="tablist" aria-label="Skill Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Programming &amp; Web</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Frameworks &amp; DB</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools &amp; Concepts</button>
+          <button class="filter-btn" data-filter="soft" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <span class="category-count">Primary Language</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge primary-skill">
+                <span class="skill-name">Python</span>
+                <span class="skill-tag">Core Expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Web Technologies</h3>
+                <span class="category-count">Frontend Foundation</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge">
+                <span class="skill-name">HTML</span>
+                <span class="skill-tag">Markup</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">CSS</span>
+                <span class="skill-tag">Styling</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-tag">Interactivity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Technologies -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Database Technologies</h3>
+                <span class="category-count">Data Management</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge">
+                <span class="skill-name">SQL</span>
+                <span class="skill-tag">Queries &amp; DDL</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-tag">Relational RDBMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries (From Projects) -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Frameworks &amp; Libraries</h3>
+                <span class="category-count">Application Stacks</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge">
+                <span class="skill-name">FastAPI</span>
+                <span class="skill-tag">High-Perf Python API</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">Python (Flask)</span>
+                <span class="skill-tag">Web Microframework</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">React</span>
+                <span class="skill-tag">Frontend UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Concepts & Analysis -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Core Concepts &amp; APIs</h3>
+                <span class="category-count">Architecture</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge">
+                <span class="skill-name">Python AST</span>
+                <span class="skill-tag">Syntax Tree Parsing</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">REST API</span>
+                <span class="skill-tag">Client-Server</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">OWASP Top 10</span>
+                <span class="skill-tag">Security Standards</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">OpenRouter AI</span>
+                <span class="skill-tag">LLM Integration</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">Brevo API</span>
+                <span class="skill-tag">Automated Emailing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Platforms</h3>
+                <span class="category-count">Developer Workflow</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge">
+                <span class="skill-name">Git</span>
+                <span class="skill-tag">Version Control</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-tag">Repository Hosting</span>
+              </div>
+              <div class="skill-badge">
+                <span class="skill-name">Visual Studio Code</span>
+                <span class="skill-tag">Primary IDE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card soft-skills-card" data-category="soft">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Soft Skills</h3>
+                <span class="category-count">Professional Aptitude</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge soft-badge">
+                <span class="skill-name">Problem Solving</span>
+              </div>
+              <div class="skill-badge soft-badge">
+                <span class="skill-name">Team Collaboration</span>
+              </div>
+              <div class="skill-badge soft-badge">
+                <span class="skill-name">Communication</span>
+              </div>
+              <div class="skill-badge soft-badge">
+                <span class="skill-name">Adaptability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Real software systems engineered end-to-end to solve practical challenges in code security and public management.
+          </p>
+        </div>
+
+        <div class="projects-wrapper">
+          <!-- FEATURED PROJECT 1: CodeReview AI -->
+          <article class="project-featured-card">
+            <div class="featured-badge-bar">
+              <span class="badge-featured">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Flagship Project
+              </span>
+              <span class="badge-domain">AI &amp; Static Code Analysis</span>
+            </div>
+
+            <div class="featured-grid">
+              <div class="featured-content">
+                <h3 class="project-title">
+                  CodeReview AI <span class="project-subtitle">– AI-Powered Code Review and Security Analysis System</span>
+                </h3>
+                
+                <p class="project-problem-text">
+                  <strong>Problem it Solves:</strong> Developers frequently introduce syntax flaws and security vulnerabilities into source code without immediate feedback. CodeReview AI automates review by pairing deterministic rule-based analysis with AI-grounded explanations mapped to industry security standards.
+                </p>
+
+                <!-- Project Bullets strictly from Resume -->
+                <div class="project-bullets">
+                  <div class="bullet-item">
+                    <div class="bullet-bullet"></div>
+                    <p>Built a full-stack application that analyzes source code and identifies security issues, syntax errors, and code-quality problems using <strong>Python AST</strong> and <strong>rule-based analysis</strong>.</p>
+                  </div>
+                  <div class="bullet-item">
+                    <div class="bullet-bullet"></div>
+                    <p>Integrated <strong>OpenRouter AI</strong> to explain detected issues and provide possible solutions, with supported <strong>OWASP Top 10</strong> mapping.</p>
+                  </div>
+                  <div class="bullet-item">
+                    <div class="bullet-bullet"></div>
+                    <p>Built <strong>REST APIs using FastAPI</strong> and a <strong>React frontend</strong> where users can view issues, review suggested fixes, verify updated code, and generate <strong>PDF reports</strong>.</p>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">FastAPI</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">OpenRouter AI</span>
+                  <span class="tech-pill">Python AST</span>
+                  <span class="tech-pill">REST API</span>
+                  <span class="tech-pill">OWASP Top 10</span>
+                </div>
+
+                <!-- Action links -->
+                <div class="project-actions">
+                  <a href="#contact" class="btn btn-outline btn-sm">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Inquire About Project</span>
+                  </a>
+                  <button class="btn btn-ghost btn-sm" onclick="openProjectModal('codereview-ai')">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>System Workflow Details</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Visual Architecture / Preview Panel -->
+              <div class="featured-preview">
+                <div class="preview-mockup-card">
+                  <div class="mockup-bar">
+                    <span class="circle-btn"></span>
+                    <span class="circle-btn"></span>
+                    <span class="circle-btn"></span>
+                    <span class="mockup-route">api/v1/scans/{id}/findings</span>
+                  </div>
+                  
+                  <div class="workflow-diagram">
+                    <div class="workflow-step">
+                      <div class="step-num">01</div>
+                      <div class="step-content">
+                        <strong>Source Ingestion</strong>
+                        <span>Code upload, syntax validation, input sanitization</span>
+                      </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step active-step">
+                      <div class="step-num">02</div>
+                      <div class="step-content">
+                        <strong>Python AST &amp; Static Rules</strong>
+                        <span>Deterministic vulnerability &amp; syntax error parsing</span>
+                      </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step">
+                      <div class="step-num">03</div>
+                      <div class="step-content">
+                        <strong>OpenRouter AI &amp; OWASP Mapping</strong>
+                        <span>Contextual explanation &amp; fix proposal generation</span>
+                      </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step">
+                      <div class="step-num">04</div>
+                      <div class="step-content">
+                        <strong>React Review &amp; PDF Report</strong>
+                        <span>Before/after verification &amp; auditable PDF export</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Smart Waste Reporting & Management System -->
+          <article class="project-standard-card">
+            <div class="standard-card-header">
+              <div class="project-meta">
+                <span class="badge-domain">Civic Tech &amp; Full-Stack Web</span>
+                <span class="badge-role">RBAC &amp; Automated Pipeline</span>
+              </div>
+              <h3 class="project-title">Smart Waste Reporting &amp; Management System</h3>
+            </div>
+
+            <div class="standard-card-body">
+              <p class="project-problem-text">
+                <strong>Problem it Solves:</strong> Public sanitation issues often languish without accountability due to lack of direct citizen reporting mechanisms. This web application provides a structured reporting flow with geo-tracking and automated admin dispatch workflows.
+              </p>
+
+              <!-- Project Bullets strictly from Resume -->
+              <div class="project-bullets">
+                <div class="bullet-item">
+                  <div class="bullet-bullet"></div>
+                  <p>Developed a full-stack web application that allows citizens to report waste issues by submitting images, location details, and complaint descriptions.</p>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-bullet"></div>
+                  <p>Implemented <strong>role-based access control (RBAC)</strong> for Citizens and Administrators, allowing complaint submission, management, and real-time status tracking.</p>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-bullet"></div>
+                  <p>Integrated secure data storage and automated email notifications for user registration, complaint submission, status updates, and complaint resolution using <strong>Brevo API</strong> and <strong>PostgreSQL</strong>.</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack Pills -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Python (Flask)</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Brevo API</span>
+              </div>
+
+              <!-- Action links -->
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-outline btn-sm">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Inquire About Project</span>
+                </a>
+                <button class="btn btn-ghost btn-sm" onclick="openProjectModal('smart-waste')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span>Architecture &amp; Features</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Consistent academic excellence spanning undergraduate engineering and foundational education.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- B.Tech Card -->
+          <div class="timeline-card current-education">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <span class="edu-period-badge">2023 – 2027 (Ongoing)</span>
+                <span class="edu-score-badge highlight-score">CGPA: 8.18</span>
+              </div>
+              <h3 class="edu-degree">B.Tech in Computer Science and Engineering (AI &amp; ML)</h3>
+              <h4 class="edu-institution">Kalasalingam Academy of Research and Education</h4>
+              <p class="edu-description">
+                Focused on Artificial Intelligence, Machine Learning algorithms, Data Structures, Database Management Systems, and Software Engineering principles. Engaged in hands-on system building and applied Python projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Intermediate / Higher Secondary Card -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <span class="edu-period-badge">2021 – 2023</span>
+                <span class="edu-score-badge">Percentage: 92.2%</span>
+              </div>
+              <h3 class="edu-degree">Higher Secondary Education (MPC)</h3>
+              <h4 class="edu-institution">Sri Chaitanya Junior College</h4>
+              <p class="edu-description">
+                Rigorous curriculum covering Mathematics, Physics, and Chemistry (MPC), building analytical rigor and quantitative problem-solving foundations.
+              </p>
+            </div>
+          </div>
+
+          <!-- High School / SSC Card -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <span class="edu-period-badge">2020 – 2021</span>
+                <span class="edu-score-badge">Percentage: 99.8%</span>
+              </div>
+              <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+              <h4 class="edu-institution">Sri Srinivasa High School</h4>
+              <p class="edu-description">
+                Completed secondary school education with distinction, demonstrating academic diligence and foundational discipline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section certifications-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Validated Knowledge</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Industry and platform-verified credentials reflecting dedicated self-learning and technical competencies.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon-box oracle-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Oracle</span>
+              <h3 class="cert-title">Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</h3>
+              <p class="cert-desc">
+                Validation of foundational understanding of Artificial Intelligence concepts, machine learning terminology, and cloud infrastructure AI services.
+              </p>
+              <div class="cert-badge-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Certified Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon-box gfg-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">GeeksforGeeks</span>
+              <h3 class="cert-title">Python Programming</h3>
+              <p class="cert-desc">
+                Comprehensive training in core Python syntax, object-oriented concepts, exception handling, data structures, and algorithmic implementation.
+              </p>
+              <div class="cert-badge-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Programming Credential</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon-box codechef-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">CodeChef</span>
+              <h3 class="cert-title">Database Management System</h3>
+              <p class="cert-desc">
+                Proficiency in relational databases, SQL queries, normalization, ACID properties, transactions, and relational schema structuring.
+              </p>
+              <div class="cert-badge-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Database Credential</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED RESUME DOWNLOAD SECTION -->
+    <section id="resume" class="section resume-section">
+      <div class="section-container">
+        <div class="resume-cta-banner">
+          <div class="resume-banner-text">
+            <span class="section-kicker">Curriculum Vitae</span>
+            <h2 class="resume-banner-title">Need a Verified Copy of My Resume?</h2>
+            <p class="resume-banner-desc">
+              Download the official single-source resume containing complete academic records (B.Tech CGPA 8.18), technical skillset, project architectures, and certifications.
+            </p>
+            <div class="resume-meta-tags">
+              <span>PDF Format</span>
+              <span>•</span>
+              <span>Updated &amp; Verified</span>
+              <span>•</span>
+              <span>Chandu Bobbala</span>
+            </div>
+          </div>
+          <div class="resume-banner-action">
+            <a href="Chandu_Bobbala_Resume.pdf" download="Chandu_Bobbala_Resume.pdf" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download My Resume</span>
+            </a>
+            <a href="Chandu_Bobbala_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View in Browser</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Open to discussing entry-level software engineering roles, internship opportunities, or academic collaborations.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Column -->
+          <div class="contact-info-col">
+            <h3 class="contact-col-title">Direct Contact Information</h3>
+            <p class="contact-col-desc">
+              Feel free to reach out directly via email, phone, or professional networks. I look forward to hearing from recruiters and engineering teams.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Email Address</span>
+                  <a href="mailto:bobbalachandu25@gmail.com" class="contact-val">bobbalachandu25@gmail.com</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('bobbalachandu25@gmail.com', this)" title="Copy email address">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Phone / Mobile</span>
+                  <a href="tel:+919398419225" class="contact-val">+91 93984 19225</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('+919398419225', this)" title="Copy phone number">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Professional Network Links -->
+              <div class="contact-networks">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="network-btn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span>Connect on LinkedIn</span>
+                </a>
+                <a href="https://github.com/chandu779979" target="_blank" rel="noopener noreferrer" class="network-btn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Follow on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="form-container-card">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Fill in your inquiry and it will generate an instant communication channel.</p>
+
+              <form id="contact-form" class="portfolio-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="form-name">Your Full Name <span class="req">*</span></label>
+                  <input type="text" id="form-name" name="name" required placeholder="e.g. Alex Morgan" class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email">Your Email Address <span class="req">*</span></label>
+                  <input type="email" id="form-email" name="email" required placeholder="e.g. alex.morgan@company.com" class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject">Subject <span class="req">*</span></label>
+                  <input type="text" id="form-subject" name="subject" required placeholder="e.g. Software Developer Opportunity / Interview Invitation" class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Message <span class="req">*</span></label>
+                  <textarea id="form-message" name="message" rows="5" required placeholder="Hello Chandu, we reviewed your projects and would like to discuss..." class="form-input form-textarea"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Send Message</span>
+                </button>
+
+                <div id="form-status" class="form-status-msg" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="logo-symbol">&lt;</span>
+          <span class="logo-name">Chandu</span>
+          <span class="logo-dot">.</span>
+          <span class="logo-ext">dev</span>
+          <span class="logo-symbol">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Computer Science &amp; Engineering (AI &amp; ML) Undergraduate • Python &amp; Full-Stack Developer
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="current-year"></span> Chandu Bobbala. All details faithful to official resume.
+        </p>
+        <button onclick="scrollToTop()" class="back-to-top-btn" title="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Project Architecture & Details -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Project Details</h3>
+        <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" onclick="closeProjectModal()">Close</button>
+        <a href="mailto:bobbalachandu25@gmail.com?subject=Project%20Discussion" class="btn btn-primary btn-sm">Discuss Project</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
